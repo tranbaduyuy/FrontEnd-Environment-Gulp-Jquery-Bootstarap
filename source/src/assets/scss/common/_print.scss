@@ -1,0 +1,19 @@
+@media print {
+  .header,
+  .footer,
+  .nav,
+  .edito-tools,
+  .banner,
+  .gallery-thumb,
+  .media-content,
+  .jw-controls,
+  .gallery-show__button,
+  marquee {
+    display: none;
+  }
+
+  a:after,
+  abbr:after {
+    content: '' !important;
+  }
+}

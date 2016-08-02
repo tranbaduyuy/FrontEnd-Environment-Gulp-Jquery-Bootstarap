@@ -1,0 +1,205 @@
+// Reset
+
+html {
+  font-size: $rem-base;
+}
+
+body {
+  padding-top: em(141);
+  -webkit-font-smoothing: antialiased;
+  -ms-overflow-style: scrollbar;
+}
+
+span,
+embed,
+object,
+iframe,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+output,
+q,
+samp,
+small,
+sub,
+sup,
+var,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+form,
+fieldset,
+legend,
+label,
+main,
+section,
+article,
+aside,
+canvas,
+details,
+summary,
+figure,
+figcaption,
+header,
+footer,
+hgroup,
+menu,
+nav,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+main,
+section,
+article,
+aside,
+details,
+summary,
+figure,
+figcaption,
+header,
+footer,
+hgroup,
+menu,
+nav {
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none;
+}
+
+table,
+caption,
+tbody,
+thead,
+tfoot,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: 1px solid $fieldset-border-color;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: none;
+}
+
+input,
+textarea,
+select {
+  border-radius: 0;
+  appearance: none;
+}
+
+button,
+input,
+textarea,
+select,
+optgroup {
+  color: inherit;
+  font-family: inherit;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+select,
+button {
+  text-transform: none;
+}
+
+noscript {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  color: $white;
+  background: $gray;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+}
+
+img {
+  max-width: 100%;
+}
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  body {
+    padding-top: em(140);
+  }
+}
+
+@media (max-width: $screen-xs-max) {
+  body {
+    padding-top: em(110);
+    padding-bottom: em(60);
+  }
+}

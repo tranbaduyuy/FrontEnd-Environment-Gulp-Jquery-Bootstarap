@@ -1,0 +1,39 @@
+include ../mixins/all
+
+block vars
+  - title = 'Site'
+  - bodyClass = ''
+
+doctype html
+html(class="no-js", lang="fr")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    title=title
+    meta(name="description", content="")
+    meta(name="keywords", content="")
+    meta(name="robots", content="index, follow")
+    meta(name="author", content="")
+    meta(name="viewport", content="width=device-width, initial-scale=1, minimal-ui, user-scalable=no")
+    link(rel="icon", href="favicon.ico", type="image/x-icon", sizes="16x16")
+
+    <!-- build:css assets/css/app.min.css -->
+    <link rel="stylesheet" href="assets/css/app.css">
+    <!-- endbuild -->
+
+    //[if lte IE 9]>
+      <script src="../../vendor/html5shiv/dist/html5shiv-printshiv.js"></script>
+      <![endif]
+
+  body(class=bodyClass)
+    #wrapper
+      block header
+        include ../components/header
+
+      main#main
+        block container
+
+      include ../components/footer
+
+    #external
+      include ../common/script

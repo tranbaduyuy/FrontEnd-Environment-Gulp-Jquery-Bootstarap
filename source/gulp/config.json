@@ -1,0 +1,57 @@
+{
+    "base": {
+        "src": "src/",
+        "build": "build/",
+        "compile": "web/",
+        "test": "test/",
+        "vendor": "vendor/",
+        "static": "static/"
+    },
+    "path": {
+        "sass": "assets/scss/",
+        "views": "views/",
+        "css": "assets/css/",
+        "images": "assets/img/",
+        "fonts": "assets/fonts/",
+        "icons": "assets/icons/",
+        "js": "assets/js",
+        "mocks": "assets/mocks/",
+        "root": "root/"
+    },
+    "files": {
+        "index": "index.html",
+        "html": "**/*.html",
+        "jade": "*.jade",
+        "jadeAll": "**/*.jade",
+        "json": "*.json",
+        "tmpl": "**/*.tmpl",
+        "sass": "app.scss",
+        "sassAll": "**/*.scss",
+        "css": "**/*.css",
+        "js": "{,*/,*/*/}*.js",
+        "libJs": "**/libs/*.js",
+        "componentsJs": "**/components/*.js",
+        "commonJs": "**/common/*.js",
+        "fonts": "**",
+        "images": "{,*/,*/*/}*.{png,jpg,jpeg,gif}",
+        "root": "**",
+        "hidden": ".**",
+        "static": "**/*.*"
+    },
+    "vendor":{
+        "js": [
+            "vendor/jquery/dist/jquery.js",
+            "vendor/modernizr/modernizr.js",
+            "vendor/slick-carousel/slick/slick.js"
+        ],
+        "assets": []
+    },
+    "env": {
+        "prod": {
+
+        },
+        "dev": {
+
+        }
+    }
+}

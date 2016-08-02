@@ -1,0 +1,48 @@
+@function strip-units($value) {
+  @return ($value / ($value * 0 + 1));
+}
+
+@function em($pxval, $base: $em-base) {
+  @if not unitless($pxval) {
+    $pxval: strip-units($pxval);
+  }
+  @if not unitless($base) {
+    $base: strip-units($base);
+  }
+  @return ($pxval / $base) * 1em;
+}
+
+@function rem($pxval) {
+  @if not unitless($pxval) {
+    $pxval: strip-units($pxval);
+  }
+
+  $base: $rem-base;
+  @if not unitless($base) {
+    $base: strip-units($base);
+  }
+  @return ($pxval / $base) * 1rem;
+}
+
+@mixin minquery($width, $ratio: false) {
+  @if $ratio {
+    @media only screen and (min-width: $width) and (min-device-pixel-ratio: $ratio) {
+      @content;
+    }
+  } @else {
+    @media only screen and (min-width: $width) {
+      @content;
+    }
+  }
+}
+
+@mixin icon($iconvar, $center: false, $top: 50%) {
+  content: $iconvar;
+  font-family: $suez;
+
+  @if $center {
+    position: absolute;
+    top: $top;
+    transform: translateY(-50%);
+  }
+}

@@ -1,0 +1,20 @@
+mixin list-1(items)
+  ul&attributes(attributes)
+    each item in items
+      li(class=item.class)
+        +link-1(item)(data-block=item.dataBlock, target="_self")
+    if block
+      block
+
+
+mixin dropdownSimple(title)
+  .dropdown(data-dropdown="true")
+    .dropdown__heading
+      h3.dropdown__title
+        +link-1({text: title})(target="_self")
+      .dropdown__icon.icon-arrow-1-b
+        span.h-text Dropdown Toggle
+    .dropdown__content
+      if block
+        block
+

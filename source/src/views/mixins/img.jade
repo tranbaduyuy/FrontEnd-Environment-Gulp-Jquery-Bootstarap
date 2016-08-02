@@ -1,0 +1,5 @@
+mixin img-full()
+  - if (typeof(src) === 'undefined') src = 'assets/img/transparent.png'
+  - if (typeof(alt) === '') alt = 'alternative information'
+  .img-wrapper
+    img(src=src, alt=alt)&attributes(attributes)
