@@ -9,10 +9,7 @@ var viewsPath = conf.base.src + conf.path.views;
 gulp.task('jade', function() {
     return gulp.src([
             viewsPath + conf.files.jade,
-            '!' + viewsPath + 'dev_1.jade',
-            '!' + viewsPath + 'dev_2.jade',
-            '!' + viewsPath + 'dev_3.jade',
-            '!' + viewsPath +'dev_4.jade'])
+            viewsPath + 'components' + conf.files.jade,])
         .pipe(jade({
             pretty: true
         }))

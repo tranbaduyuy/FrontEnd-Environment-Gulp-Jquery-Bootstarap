@@ -15,7 +15,8 @@ gulp.task('sass:lint', function () {
         '!**/_fancybox.scss',
         '!**/_bootstrap.scss',
         '!**/_icons.scss',
-        '!**/_variables.scss'
+        '!**/_variables.scss',
+        '!**/_print.scss'
         ])
         .pipe(sasslint({
             options: { 'config-file': path.resolve(__dirname, '../scss-lint.yml') }
