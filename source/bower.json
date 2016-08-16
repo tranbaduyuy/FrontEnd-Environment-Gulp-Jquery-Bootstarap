@@ -1,6 +1,6 @@
 {
   "name": "front-end",
-  "description": "Front End project for ATMB project",
+  "description": "Front End project",
   "version": "1.0.0",
   "ignore": [
     "**/.*",
