@@ -1,6 +1,6 @@
 'use strict';
 
-var suez = (function(window) {
+var site = (function(window) {
   var body = $('body');
 
   function init() {

@@ -190,16 +190,3 @@ h6 {
 img {
   max-width: 100%;
 }
-
-@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-  body {
-    padding-top: em(140);
-  }
-}
-
-@media (max-width: $screen-xs-max) {
-  body {
-    padding-top: em(110);
-    padding-bottom: em(60);
-  }
-}

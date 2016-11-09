@@ -35,14 +35,3 @@
     }
   }
 }
-
-@mixin icon($iconvar, $center: false, $top: 50%) {
-  content: $iconvar;
-  font-family: $suez;
-
-  @if $center {
-    position: absolute;
-    top: $top;
-    transform: translateY(-50%);
-  }
-}
